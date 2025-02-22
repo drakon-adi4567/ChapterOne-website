@@ -1,4 +1,5 @@
 {
+  "hompage": "https://drakon-adi4567.github.io/ChapterOne-website",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -6,8 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
     "lint": "next lint",
-    "deploy": "vercel --prod"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@react-three/drei": "^9.105.4",
